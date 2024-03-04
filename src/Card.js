@@ -1,13 +1,20 @@
-function Card(title, content) {
+
+
+
+
+function Card(props) {
+
+
     return(
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">{title}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">{content}</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
+        <div class="card" style={{width: "19rem", margin: "1rem"}}>
+  <h5 class="card-header">{props.title}</h5>
+  <div class="card-body">
+    <h5 class="card-title">{props.subtitle}</h5>
+    <p class="card-text">{props.text}</p>
+    <a href="#" class="btn btn-primary">This does nothing</a>
+  </div>
+</div>
     );
 }
+
+export default Card;
