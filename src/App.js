@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import './Card.js';
+import './Navbar.js';
 
 function App() {
 
@@ -9,6 +11,7 @@ let name = "Alex";
 
   return (
     <div className="App">
+
       <h1>CS 230L</h1>
       <h2>Section - {section_number}</h2>
       <p>{wvu_id}</p>
